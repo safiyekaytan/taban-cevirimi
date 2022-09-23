@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+
+    </head>
+    <body>
+<script>
+
+    //JS de taban donusumu
+var sayi = window.prompt("bir  sayi gir "); //sayi al
+alert("Girilen sayi" + sayi);
+
+var taban1 = window.prompt("Sayinin tabanini gir "); //girilen sayinin tabanini al
+alert("Girilen sayinin tabani" + taban1);
+
+var taban2 = window.prompt("Cevirilmek istenen tabani gir "); //cevirilmek istenen tabani al
+alert("yeni taban" + taban2);
+
+var i=0;
+var toplam=0;
+var array=[];
+var boyut;
+
+//ikilik tabandan onluk tabana cevir  10011
+if(taban1==2 && taban2==10)
+{
+    while(sayi>0)
+   {
+     toplam+=(sayi%10)*Math.pow(2,i);
+     i++;
+     sayi=sayi/10;
+    }
+console.log("sayi:"+toplam);
+}
+
+
+if(taban1==10 && taban2==2)
+{
+//onluk tabandan ikilik tabana gec
+i=0;
+while(sayi>0)
+{
+    array[i]=sayi%2;
+    sayi/=2;
+    i++;
+    boyut=i;
+    //tersten diziyi olusturdun
+}
+
+for(i=boyut-1; i>=0; i--)
+{
+    alert(array[i]);
+    //olusturdugun diziyi tersten yaz
+
+}
+}
+
+</script>
+    </body>
+</html>
+
+
+
+
+
+ 
